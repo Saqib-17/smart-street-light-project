@@ -21,7 +21,7 @@ const io = new Server(server, { cors: { origin: '*' } });
 let lightStatus = 'OFF';
 
 // Open your Arduino’s COM port (update COM3 if yours is different)
-const port = new SerialPort({ path: 'COM3', baudRate: 9600 });
+const port = new SerialPort({ path: 'COM4', baudRate: 9600 });
 
 // Parse data coming over serial as lines
 const parser = port.pipe(new ReadlineParser({ delimiter: '\r\n' }));
