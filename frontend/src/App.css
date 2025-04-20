@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #121212, #2c2c2c);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 255, 150, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #00ff99;
+}
+
+.status {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+
+.status.on {
+  background: #00ff99;
+  color: #121212;
+  box-shadow: 0 0 20px #00ff99;
+}
+
+.status.off {
+  background: #555;
+  color: #ddd;
+  box-shadow: none;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 10px;
+}
